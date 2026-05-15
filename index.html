@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
-<body>
-    
+
+<body class="min-h-screen flex items-center justify-center bg-slate-100 p-4">
+
+    <div class="w-full max-w-md bg-white rounded-3xl shadow-xl p-6 space-y-6">
+
+        <h1 class="text-xl font-bold text-center">Número capicúa</h1>
+
+        <input id="numero" type="number" class="w-full p-4 border rounded-xl" placeholder="Ej: 161" />
+
+        <button onclick="verificarCapicua()" class="w-full bg-blue-500 text-white p-4 rounded-xl">
+            Verificar
+        </button>
+
+        <div id="resultado" class="text-center font-semibold p-4 rounded-xl"></div>
+
+    </div>
+
     <script src="app.js"></script>
 </body>
+
 </html>
